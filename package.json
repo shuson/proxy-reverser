@@ -1,0 +1,25 @@
+{
+  "name": "proxy-reverser",
+  "version": "0.0.1",
+  "description": "a reversed proxy server built by nodejs",
+  "keywords": [
+    "proxy"
+  ],
+  "author": "shuson <wlgq@hotmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shuson/proxy-reverser"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "commander": "~2.7.1",
+    "debug" : "~2.1.3"
+  },
+  "devDependencies": {
+  },
+  "license": "MIT",
+  "main": "index.js"
+}

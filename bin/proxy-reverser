@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var chalk = require('chalk');
+var pkg = require("../package");
+var pr = require("../index");
+
+console.log(chalk.green("welcome to " + pkg.name + "@" + pkg.version));
+
+program
+  .version(pkg.version)
+  .option('-d, --debug', 'show debug information')
+  .option('-c, --config [customRules.js]', 'custom rules file exampled as [defaultRules.json]', 'defaultRules.js')
+  .parse(process.argv);
+ 
+pr.cmd.debug = program.debug;
+pr.cmd.config = program.config;
+
+if (program.config) console.log('  - use %s rules file!', program.config);
+
+pr.run();
