@@ -1,6 +1,6 @@
 module.exports = {
     vhosts: [
-        'example1.com': {
+        {
             /**
              * The host and port to which we forward the requests.
              */
@@ -8,7 +8,7 @@ module.exports = {
             'port': '8091',
             'rules': ['example1']
         },
-        'example2.com': {
+        {
             /**
              * The host and port to which we forward the requests.
              */
